@@ -1,15 +1,26 @@
+function ReadTheme() {
+    return document.cookie.substring(6);
+}
+function SaveTheme(themeType) {
+    document.cookie = "theme=" + themeType;
+}
+
+
 function SetDayNightTheme(isDark) {
     var body = document.getElementsByTagName("BODY")[0];
+    var img = document.getElementById("themeToggleImg");
     if (isDark) {
         body.style.background = "black";
-        localStorage.setItem("theme", "dark");
+        img.src = "Images/bulb-outline.svg";
+        SaveTheme("dark");
     }
     else {
         body.style.background = "#fbf5e9";
-        localStorage.setItem("theme", "light");
+        img.src = "Images/bulb.svg";
+        SaveTheme("light");
     }
 }
 function ToggleDayNight() {
-    SetDayNightTheme(!(localStorage.getItem("theme") === "dark"));
+    SetDayNightTheme(!(ReadTheme() === "dark"));
 }
-SetDayNightTheme(localStorage.getItem("theme") === "dark");
+SetDayNightTheme(ReadTheme() === "dark");

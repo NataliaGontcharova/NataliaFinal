@@ -36,19 +36,21 @@
 
     <div class="container">
         <section class="movie-decription">
-            <img src="#" alt="image from The Lord of the Rings: The Return of the King move">
-            <h2 class="movie-title text-center">The Lord of the Rings: The Return of the King</h2>
+            <img src="Images/Movie_LotR_RotK.png" alt="image from The Lord of the Rings: The Return of the King move">
+            <h2 id="movieTitle" class="movie-title text-center">The Lord of the Rings: The Return of the King</h2>
             <p>
                 Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as
                 they
                 approach Mount Doom with the One Ring.
             </p>
             <p class="heart-icon text-center">
-                <ion-icon name="heart-outline"></ion-icon>
+                <img id="heartToggleImg" src="Images/heart-outline.svg" height="25px" alt="like it?"
+                    onclick="ToggleLiked(movieOnThePage);" />
+                <!-- ion-icon name="heart-outline"></ion-icon-->
             </p>
         </section>
 
-        <main class="movie-info">
+        <main class="movie-info">+
             <div class="row">
                 <div class="director col-4">
                     <h3>Director</h3>
@@ -103,6 +105,10 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script>
+        var movieOnThePage = document.getElementById("movieTitle").innerText; 
+    </script>
+    <script src="likes.js"></script>
 </body>
 
 </html>

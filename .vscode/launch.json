@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open Index.html",
-            "file": "c:\\Users\\maybe\\Desktop\\CST8117\\Final\\CST8117Final-main\\NataliaFinal\\Index.html"
+            "url": "http://127.0.0.1:5500/ReturnOfTheKing.html",
         }
     ]
 }
