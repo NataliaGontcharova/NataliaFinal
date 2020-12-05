@@ -36,13 +36,14 @@
   <div class="container">
     <section class="movie-decription">
       <img src="#" alt="image from Parasite move">
-      <h2 class="movie-title text-center">Parasite</h2>
+      <h2 id="movieTitle" class="movie-title text-center">Parasite</h2>
       <p>
         Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family
         and the destitute Kim clan.
       </p>
       <p class="heart-icon text-center">
-        <ion-icon name="heart-outline"></ion-icon>
+        <img id="heartToggleImg" src="Images/heart-outline.svg" height="25px" alt="like it?"
+          onclick="ToggleLiked(movieOnThePage);" />
       </p>
     </section>
 
@@ -93,6 +94,8 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="likes.js"></script>
+
 </body>
 
 </html>

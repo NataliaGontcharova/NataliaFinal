@@ -1,3 +1,5 @@
+var movieOnThePage = document.getElementById("movieTitle").innerText;
+
 function ReadLike(movie) {
     return localStorage.getItem(movie);
 }
