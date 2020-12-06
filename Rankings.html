@@ -29,6 +29,10 @@
         <li class="nav-item">
           <a class="nav-link" href="Rankings.html">Rankings</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="ToggleDayNight();"> <img id="themeToggleImg" src="Images/bulb.svg"
+              height="25px" alt="toggle" /></a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -51,6 +55,10 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+  <!-- script containing the logic for toggling/saving the Day/Night theme setting -->
+  <!-- intentionally placed in the footer, as during the load time it restores previous settings -->
+  <!-- and assumes the elementes to apply the theme to are already loaded -->
   <script src="theme.js"> </script>
 </body>
 
