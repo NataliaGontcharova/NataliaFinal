@@ -8,6 +8,8 @@ body {
   color: #093235;
 }
 
+/* Navigation Bar */
+
 nav {
   background-color: #e5dac4;
 }
@@ -16,6 +18,8 @@ nav {
 .navbar-brand {
   color: var(--blue);
 }
+
+/* Movie Carousel */
 
 #movieCarousel {
   width: 75%;
@@ -37,6 +41,8 @@ nav {
   opacity: 40%;
 }
 
+/* Information blocks */
+
 .infoBlock {
   background-color: var(--blue);
   width: 75%;
@@ -51,24 +57,16 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  #movieCarousel {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-  }
+/* Movies Pages */
+
+.movie-header-img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+  padding: 5vh 0;
 }
 
-@media (max-width: 769px) {
-  .infoBlock {
-    width: 100%;
-  }
-
-  .infoBlockContent {
-    width: 100%;
-    padding: 2rem;
-  }
-}
+/* Footer */
 
 footer {
   text-align: center;
@@ -90,4 +88,25 @@ footer {
 
 .socialMedia:hover {
   color: var(--blue);
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  #movieCarousel {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 769px) {
+  .infoBlock {
+    width: 100%;
+  }
+
+  .infoBlockContent {
+    width: 100%;
+    padding: 2rem;
+  }
 }
