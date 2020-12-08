@@ -35,7 +35,7 @@ function SetDayNightTheme(isDark) {
     navLink.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
     const info = document.querySelectorAll('.movie-info');
     info.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
-    const description = document.querySelectorAll('.movie-decription');
+    const description = document.querySelectorAll('.movie-description');
     description.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
 
 
