@@ -30,11 +30,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Rankings.html">Rankings</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="ToggleDayNight();"> <img id="themeToggleImg"
+                            src="Images/bulb.svg" height="25px" alt="toggle" /></a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container">
-        <section class="movie-decription">
+        <section class="movie-description">
             <img src="#" alt="image from The Shaw Shark Redemption movie">
             <h2 id="movieTitle" class="movie-title text-center">The Shaw Shark Redemption</h2>
             <p>
@@ -42,9 +46,7 @@
                 of common decency.
             </p>
 
-            <p class="heart-icon text-center">
-                <img id="heartToggleImg" src="Images/heart-outline.svg" height="25px" alt="like it?"
-                    onclick="ToggleLiked(movieOnThePage);" />
+            <p class="heart-icon text-center" style="font-size:25px" onclick="ToggleLiked(movieOnThePage);">
             </p>
         </section>
 
@@ -104,6 +106,12 @@
     <!-- the script link is intentionally placed in the footer, as during the page load time it restores previous settings -->
     <!-- and assumes the element to reflect the like flag is already loaded -->
     <script src="likes.js"></script>
+
+    <!-- script containing the logic for toggling/saving the Day/Night theme setting -->
+    <!-- intentionally placed in the footer, as during the load time it restores previous settings -->
+    <!-- and assumes the elementes to apply the theme to are already loaded -->
+    <script src="theme.js"> </script>
+
 </body>
 
 </html>

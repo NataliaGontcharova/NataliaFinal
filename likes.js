@@ -29,14 +29,15 @@ function SaveLike(movie, liked) {
 // Save the current state in local file storage
 // "movie" parameter is to pass the title of the movie
 // "liked" parameter is a boolean. "true" for liked pages
-function SetLiked(movie, liked) {
-    var img = document.getElementById("heartToggleImg");
-    if (liked) {
-        img.src = "Images/heart.svg";
+function SetLiked(movie, likeFlag) {
+    var likeContainer = document.getElementsByClassName("heart-icon")[0];
+
+    if (likeFlag) {
+        likeContainer.innerHTML = "<ion-icon name=\"heart\"> </ion-icon>";
         SaveLike(movie, "yes");
     }
     else {
-        img.src = "Images/heart-outline.svg";
+        likeContainer.innerHTML = "<ion-icon name=\"heart-outline\"> </ion-icon>";
         SaveLike(movie, "no");
     }
 }
