@@ -65,6 +65,13 @@ nav {
   height: 70vh;
   padding: 5vh 0;
 }
+ul{
+list-style-type: none;
+}
+.heart-icon{
+  text-align: center;
+  font-size:25px;  
+}
 
 /* Footer */
 
@@ -88,6 +95,47 @@ footer {
 
 .socialMedia:hover {
   color: var(--blue);
+}
+/* Recommendations */
+
+.recommendedBlock {
+  background-color: var(--blue);
+  min-height: 30rem;
+  width: 75%;
+  margin: 5rem auto;
+  color: #fbf5e9;
+  display: flex;
+  align-items: center;
+}
+
+.recommendedBlockContent {
+  width: 50vw;
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: center;
+}
+#spiderverse {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Images/banner_spiderverse.jpg);
+}
+
+#dark_knight {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Images/banner_dark_knight.jpg);
+}
+
+#matrix {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Images/banner_matrix.jpg);
+}
+
+#spiderverse,
+#dark_knight,
+#matrix {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
 }
 
 /* Media Queries */
