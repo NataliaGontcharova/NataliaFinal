@@ -1,114 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Lord of the Rings: The Return of the King</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="default.css" />
     <meta name="author" content="Edward Prado MEMBERS HERE" />
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="Index.html">Glory</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="Recommendations.html">Our Recommendations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Rankings.html">Rankings</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="Index.html">Glory</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Recommendations.html"
+              >Our Recommendations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Rankings.html">Rankings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="ToggleDayNight();">
+              <img
+                id="themeToggleImg"
+                src="Images/bulb.svg"
+                height="25px"
+                alt="toggle"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <section class="movie-decription">
-            <img src="#" alt="image from The Lord of the Rings: The Return of the King move">
-            <h2 id="movieTitle" class="movie-title text-center">The Lord of the Rings: The Return of the King</h2>
-            <p>
-                Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as
-                they
-                approach Mount Doom with the One Ring.
-            </p>
-            <p class="heart-icon text-center">
-                <img id="heartToggleImg" src="Images/heart-outline.svg" height="25px" alt="like it?"
-                    onclick="ToggleLiked(movieOnThePage);" />
-            </p>
-        </section>
+      <section class="movie-description">
+        <img
+          src="/Images/Movie_LotR_RotK.png"
+          alt="image from The Lord of the Rings: The Return of the King move"
+          class="movie-header-img"
+        />
+        <h2 id="movieTitle" class="movie-title text-center">
+          The Lord of the Rings: The Return of the King
+        </h2>
+        <p>
+          Gandalf and Aragorn lead the World of Men against Sauron's army to
+          draw his gaze from Frodo and Sam as they approach Mount Doom with the
+          One Ring.
+        </p>
+        <p class="heart-icon text-center">
+          <img
+            id="heartToggleImg"
+            src="Images/heart-outline.svg"
+            height="25px"
+            alt="like it?"
+            onclick="ToggleLiked(movieOnThePage);"
+          />
+        </p>
+      </section>
 
-        <main class="movie-info">+
-            <div class="row">
-                <div class="director col-4">
-                    <h3>Director</h3>
-                    <p>Peter Jackson</p>
-                </div>
-                <div class="actors col-4">
-                    <h3>Lead Actors</h3>
-                    <ul>
-                        <li>Viggo Mortenseny</li>
-                        <li>Elijah Wood</li>
-                        <li>Ian McKellen</li>
-                        <li>Sean Astin</li>
-                        <li>Billy Boyd</li>
-                        <li>Orlando Bloom</li>
-                        <li>Andy Serkis</li>
-                        <li>Liv Tyler</li>
-                        <li>Karl Urban</li>
-                        <li>Bernard Hill</li>
-                        <li>Cate Blanchett</li>
-                        <li>David Wenham</li>
-                        <li>Dominic Monaghan</li>
-                    </ul>
-                </div>
-                <div class="writers col-4">
-                    <h3>Writers</h3>
-                    <ul>
-                        <li>J.R.R. Tolkien</li>
-                        <li>Fran Walsh</li>
-                        <li>Philippa Boyens</li>
-                        <li>Peter Jackson</li>
-                    </ul>
-                </div>
-            </div>
-
-        </main>
+      <main class="movie-info">
+        <div class="row">
+          <div class="director col-4">
+            <h3>Director</h3>
+            <p>Peter Jackson</p>
+          </div>
+          <div class="actors col-4">
+            <h3>Lead Actors</h3>
+            <ul>
+              <li>Viggo Mortenseny</li>
+              <li>Elijah Wood</li>
+              <li>Ian McKellen</li>
+              <li>Sean Astin</li>
+              <li>Billy Boyd</li>
+              <li>Orlando Bloom</li>
+              <li>Andy Serkis</li>
+              <li>Liv Tyler</li>
+              <li>Karl Urban</li>
+              <li>Bernard Hill</li>
+              <li>Cate Blanchett</li>
+              <li>David Wenham</li>
+              <li>Dominic Monaghan</li>
+            </ul>
+          </div>
+          <div class="writers col-4">
+            <h3>Writers</h3>
+            <ul>
+              <li>J.R.R. Tolkien</li>
+              <li>Fran Walsh</li>
+              <li>Philippa Boyens</li>
+              <li>Peter Jackson</li>
+            </ul>
+          </div>
+        </div>
+      </main>
     </div>
     <footer>
-        <div id="mediaLinks">
-            <a href="#" class="socialMedia">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="#" class="socialMedia">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-        </div>
-        <span><b>© 2020-2020 Company</b></span>
+      <div id="mediaLinks">
+        <a href="#" class="socialMedia">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="socialMedia">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </div>
+      <span><b>© 2020-2020 Company</b></span>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <!-- script containing the logic for toggling/saving the Like flag for a given movie -->
     <!-- movie title is detected from the element with id="movieTitle" -->
     <!-- the script link is intentionally placed in the footer, as during the page load time it restores previous settings -->
     <!-- and assumes the element to reflect the like flag is already loaded -->
     <script src="likes.js"></script>
-</body>
-
+    <script src="theme.js"></script>
+  </body>
 </html>
