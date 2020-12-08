@@ -24,6 +24,28 @@ function SetDayNightTheme(isDark) {
     var body = document.getElementsByTagName("BODY")[0];
     // find the icon image by ID we assign on the page(s)
     var img = document.getElementById("themeToggleImg");
+    var twitter = document.getElementById("twitter-logo");
+    var fb = document.getElementById("fb-logo");
+
+
+    const footerText = document.querySelectorAll('.footer-text');
+    footerText.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
+    const navBrand = document.querySelectorAll('.navbar-brand');
+    navBrand.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
+    const info = document.querySelectorAll('.movie-info');
+    info.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
+    const description = document.querySelectorAll('.movie-decription');
+    description.forEach(element => { element.style.color = (isDark) ? "#FBF5E9" : "#093235"; });
+
+
+
+    const navBar = document.querySelectorAll('.navbar');
+    navBar.forEach(element => { element.style.background = (isDark) ? "#1F1F1F" : "#E5DAC4"; });
+
+
+
 
     // Depending the on the them type, apply corresponding color/image
     // The calling SaveTheme() to save the choice made, which is needed for 
@@ -31,12 +53,17 @@ function SetDayNightTheme(isDark) {
     //  - remembering the choice the next time the page is opened
     if (isDark) {
         body.style.background = "black";
-        img.src = "Images/bulb-outline.svg";
+        img.src = "Images/bulb-white.svg";
+        if (twitter) twitter.src = "Images/logo-twitter-white.svg";
+        if (fb) fb.src = "Images/logo-facebook-white.svg";
+
         SaveTheme("dark");
     }
     else {
         body.style.background = "#fbf5e9";
         img.src = "Images/bulb.svg";
+        if (twitter) twitter.src = "Images/logo-twitter-black.svg";
+        if (fb) fb.src = "Images/logo-facebook-black.svg";
         SaveTheme("light");
     }
 }

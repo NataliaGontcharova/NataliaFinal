@@ -30,6 +30,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Rankings.html">Rankings</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="ToggleDayNight();"> <img id="themeToggleImg"
+                            src="Images/bulb.svg" height="25px" alt="toggle" /></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -83,13 +87,13 @@
     <footer>
         <div id="mediaLinks">
             <a href="#" class="socialMedia">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <img id="twitter-logo" src="Images/logo-twitter-black.svg" height="25px" alt="twitter" />
             </a>
             <a href="#" class="socialMedia">
-                <ion-icon name="logo-facebook"></ion-icon>
+                <img id="fb-logo" src="Images/logo-facebook-black.svg" height="25px" alt="facebook" />
             </a>
         </div>
-        <span><b>© 2020-2020 Company</b></span>
+        <span class="footer-text"><b>© 2020-2020 Glory</b></span>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -104,6 +108,12 @@
     <!-- the script link is intentionally placed in the footer, as during the page load time it restores previous settings -->
     <!-- and assumes the element to reflect the like flag is already loaded -->
     <script src="likes.js"></script>
+
+    <!-- script containing the logic for toggling/saving the Day/Night theme setting -->
+    <!-- intentionally placed in the footer, as during the load time it restores previous settings -->
+    <!-- and assumes the elementes to apply the theme to are already loaded -->
+    <script src="theme.js"> </script>
+
 </body>
 
 </html>
